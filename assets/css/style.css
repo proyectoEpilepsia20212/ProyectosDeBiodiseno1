@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   z-index: 997;
   transition: all 0.5s;
   padding: 20px 0;
-  background: #724c92;
+  background: #371484b5;
 }
 
 #header.header-transparent {
@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 #header.header-scrolled {
-  background: rgba(114, 76, 146, 0.84);
+  background: rgba(55, 20, 132, 0.71);
   height: 60px;
   padding: 10px 0;
 }
