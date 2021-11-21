@@ -144,7 +144,29 @@
                   Tras haber investigado la literatura con respecto al estado del arte de un sistema de detección y un sistema de amortiguamiento, se procedió a desarollar los requerimientos de diseño en base a la metodología de diseño VDI 2221, y
                   para ello, se delimitaron las exigencias: función principal, performance, señales, energía, interfaz, montaje, masa, operación, precisión, sensibilidad y costo.
                   Posteriormente, dichas exigencias se categorizaron en requerimientos funcionales (debe hacer) y en requerimientos no funcionales (debe tener). Así, se obtuvo como resultado la tabla que se presenta a continuación.
-                </p>    
+                </p>
+              <div class="entry-content">
+                <h3>Entradas</h3>      
+                <ul>                  
+                  <li><i class=""></i> Energía de alimentación: Referida a la energía que utilizará el sistema para realizar el movimiento del mismo. Hace posible que el proceso se ponga en marcha.</li>
+                  <li><i class=""></i> Señales: Información que es transmitida al dispositivo.</li>     
+                  <ul> 
+                    <li><i class=""></i> Temperatura: Señal eléctrica que permite conocer la temperatura real a la que se encuentra la persona.</li>       
+                    <li><i class=""></i> Frecuencia cardiaca: Señal que contiene la información de los intervalos entre cada onda R del complejo cardíaco.</li>
+                    <li><i class=""></i> Cambios de velocidad y aceleración: Señal que nos dé información sobre los movimientos de la persona.</li>
+                  </ul>
+                </ul>
+                </p> 
+              <div class="entry-content">
+                <h3>Salidas</h3>      
+                <ul>                  
+                  <li><i class=""></i> Vibraciones: Disturbios que se presentarán sobre la piel del usuario para avisarle sobre la convulsión.</li>
+                  <li><i class=""></i> Data: Es la información de la temperatura y frecuencia cardiaca desde que el sistema reconoce una convulsión hasta que finaliza.</li>
+                  <li><i class=""></i> Señal sonora: Señal que se emite al reconocer la convulsión con la finalidad de avisar a las personas que se encuentren cerca del usuario.</li>
+                  <li><i class=""></i> Energía: Es la energía residual dada por el sistema.</li>
+                  <li><i class=""></i> Protección de cabeza: Accesorio amortiguador que se activa previo a la caída y permite evitar lesiones.</li>
+                </ul>
+                </p> 
                 <center>
                    <img src="assets/img/CajaNegra.png" class="img-fluid" alt="">
                 </center>
@@ -162,18 +184,20 @@
                   Posteriormente, dichas exigencias se categorizaron en requerimientos funcionales (debe hacer) y en requerimientos no funcionales (debe tener). Así, se obtuvo como resultado la tabla que se presenta a continuación.
                 </p> 
               <div class="entry-content">
-                <h3>Objetivos</h3>      
+                <h3>Funciones</h3>      
                 <ul>                  
-                  <li><i class=""></i> General: Implementar un prototipo de baja resolución de un sistema de detección y protección oportuna de convulsiones tónico-clónicas para adultos de 30 a 59 años de zonas rurales que posean la condición de epilepsia genética generalizada.</li>
-                  <li><i class=""></i> Específicos</li>     
-                  <ul> 
-                    <li><i class=""></i> Realizar un estudio del estado del arte respecto a sistemas de detección oportuna de convulsiones tónico-clónicas, así como tecnología que evite el impacto de la caída durante estas convulsiones.</li>       
-                    <li><i class=""></i> Definir las funciones que debe cumplir el sistema y sus elementos en conjunto, así como esquematizar el intercambio de información, materia y energía que ocurre entre cada una de estas funciones. </li>
-                    <li><i class=""></i> Realizar la selección de alternativas de solución para las funciones del sistema y diseñar tres conceptos de solución a partir de la combinación de dichas alternativas. </li>
-                    <li><i class=""></i> Seleccionar un diseño conceptual de solución óptimo a partir del análisis técnico-económico de los tres conceptos de solución anteriormente diseñados. </li>
-                    <li><i class=""></i> Implementar un prototipo de baja resolución del diseño conceptual seleccionado.</li>
-                  </ul>
+                  <li><i class=""></i> Captar: Sensa y mide los parámetros de entrada.</li>
+                  <li><i class=""></i> Transformar: Convierte la energía química en energía eléctrica.</li>
+                  <li><i class=""></i> Presionar: Acción del usuario para indicar la desactivación de la señal audible y de la amortiguación.</li>
+                  <li><i class=""></i> Procesar: Unidad de control principal que permita procesar las señales medidas y las respuestas que se deberán obtener a partir de ellas.</li>
+                  <li><i class=""></i> Almacenar: Guarda los datos del paciente durante las convulsiones.</li>
+                  <li><i class=""></i> Accionar: Apertura o cierra el flujo de energía de la vibración que alertará al usuario.</li>
+                  <li><i class=""></i> Emitir: Brinda una señal sonora de aviso para personas cercanas. </li>
+                  <li><i class=""></i> Activar: Mueve los componentes que generan la estructura de amortiguamiento.</li>
+                  <li><i class=""></i> Amortiguar: Brinda un sistema de atenuación ante golpes y caídas.</li>
                 </ul>
+                <p align="justify">
+                A partir de las entradas, salidas y la descomposición de la caja negra, se elabora la Figura 2, que representa el esquema completo que va a seguir el dispositivo. 
                 </p> 
                 <center>
                    <img src="assets/img/Esquema_de_funciones.jpeg" class="img-fluid" alt="">
