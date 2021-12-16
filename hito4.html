@@ -131,62 +131,33 @@ El prototipo final se desarrolló en base a programas de diseño y de simulació
               </div>
 
               <h2 class="entry-title">
-                <a href="hito2.html">Caja negra</a>
+                <a href="hito2.html">Ensamblaje del prototipo</a>
               </h2>
 
               <div class="entry-content">
                 <p align="justify">
-                  Se emplea una caja negra para evitar el análisis del funcionamiento interno. Posterior a ello, se descompone esta caja negra en funciones menores que representan las acciones que realizarán los componentes de todo el dispositivo.
+El prototipo final presentará 3 cierres externos y 3 bolsillos internos con cremallera conteniendo los componentes que previamente dijimos que lo requerían. Los únicos componentes electrónicos que necesitan ser vistos para su uso son el botón push y el botón on/off. Los brazos actuadores del servo también salen a la vista para que encaje en los soportes y pueda girar el material amortiguador interno del gorro.
                 </p>
-              <div class="entry-content">
-                <h3>Entradas</h3>      
-                <ul>                  
-                  <li><i class=""></i> Energía de alimentación: Referida a la energía que utilizará el sistema para realizar el movimiento del mismo. Hace posible que el proceso se ponga en marcha.</li>
-                  <li><i class=""></i> Señales: Información que es transmitida al dispositivo.</li>     
-                  <ul> 
-                    <li><i class=""></i> Temperatura: Señal eléctrica que permite conocer la temperatura real a la que se encuentra la persona.</li>       
-                    <li><i class=""></i> Frecuencia cardiaca: Señal que contiene la información de los intervalos entre cada onda R del complejo cardíaco.</li>
-                    <li><i class=""></i> Cambios de velocidad y aceleración: Señal que nos dé información sobre los movimientos de la persona.</li>
-                  </ul>
-                </ul>
-                </p> 
-              <div class="entry-content">
-                <h3>Salidas</h3>      
-                <ul>                  
-                  <li><i class=""></i> Vibraciones: Disturbios que se presentarán sobre la piel del usuario para avisarle sobre la convulsión.</li>
-                  <li><i class=""></i> Data: Es la información de la temperatura y frecuencia cardiaca desde que el sistema reconoce una convulsión hasta que finaliza.</li>
-                  <li><i class=""></i> Señal sonora: Señal que se emite al reconocer la convulsión con la finalidad de avisar a las personas que se encuentren cerca del usuario.</li>
-                  <li><i class=""></i> Energía: Es la energía residual dada por el sistema.</li>
-                  <li><i class=""></i> Protección de cabeza: Accesorio amortiguador que se activa previo a la caída y permite evitar lesiones.</li>
-                </ul>
-                </p> 
+             
                 <center>
-                   <img src="assets/img/CajaNegra.png" class="img-fluid" alt="">
+                   <img src="assets/img/ojo.png" class="img-fluid" alt="">
                 </center>
                 <p align="center">
-                  Figura 1. Caja negra.
+                  Figura 1. Vista de componentes en el prototipo.
                 </p>
               <h2 class="entry-title">
-                <a href="hito2.html">Estructura de funciones</a>
+                
               </h2>
               <div class="entry-content">
-                <h3>Funciones</h3>      
+                <h3>Electrónicos</h3>      
                 <ul>                  
-                  <li><i class=""></i> Captar: Sensa y mide los parámetros de entrada.</li>
-                  <li><i class=""></i> Transformar: Convierte la energía química en energía eléctrica.</li>
-                  <li><i class=""></i> Presionar: Acción del usuario para indicar la desactivación de la señal audible y de la amortiguación.</li>
-                  <li><i class=""></i> Procesar: Unidad de control principal que permita procesar las señales medidas y las respuestas que se deberán obtener a partir de ellas.</li>
-                  <li><i class=""></i> Almacenar: Guarda los datos del paciente durante las convulsiones.</li>
-                  <li><i class=""></i> Accionar: Apertura o cierra el flujo de energía de la vibración que alertará al usuario.</li>
-                  <li><i class=""></i> Emitir: Brinda una señal sonora de aviso para personas cercanas. </li>
-                  <li><i class=""></i> Activar: Mueve los componentes que generan la estructura de amortiguamiento.</li>
-                  <li><i class=""></i> Amortiguar: Brinda un sistema de atenuación ante golpes y caídas.</li>
+                  <li><i class=""></i> Para el diseño electrónico se usó el programa open-source Fritzing, del cual se puede obtener un diseño en protoboard, esquemático y PCB.</li>
+                  
                 </ul>
                 <p align="justify">
-                A partir de las entradas, salidas y la descomposición de la caja negra, se elabora la Figura 2, que representa el esquema completo que va a seguir el dispositivo. 
                 </p> 
                 <center>
-                   <img src="assets/img/Esquema_de_funciones.jpeg" class="img-fluid" alt="">
+                   <img src="assets/img/lo.jpg" class="img-fluid" alt="">
                 </center>
                 <p align="center">
                   Figura 2. Estrucura de funciones.
